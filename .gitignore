@@ -52,3 +52,13 @@ website/package-lock.json
 
 # Default directory for memory storage
 storage/
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# CRA scraper data directory
+cra_data/

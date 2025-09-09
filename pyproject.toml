@@ -38,19 +38,28 @@ dependencies = [
     "cachetools>=5.5.0",
     "colorama>=0.4.0",
     "impit>=0.6.1",
+    "marshmallow>=3.20.0",
     "more-itertools>=10.2.0",
     "protego>=0.5.0",
     "psutil>=6.0.0",
     "pydantic-settings>=2.2.0,!=2.7.0,!=2.7.1,!=2.8.0",
     "pydantic>=2.8.0,!=2.10.0,!=2.10.1,!=2.10.2",
     "pyee>=9.0.0",
+    "python-dotenv>=1.0.0",
     "tldextract>=5.1.0",
     "typing-extensions>=4.1.0",
     "yarl>=1.18.0",
 ]
 
 [project.optional-dependencies]
-all = ["crawlee[adaptive-crawler,beautifulsoup,cli,curl-impersonate,httpx,parsel,playwright,otel]"]
+all = ["crawlee[adaptive-crawler,beautifulsoup,cli,curl-impersonate,httpx,parsel,playwright,otel,cra-scraper]"]
+cra-scraper = [
+    "qdrant-client>=1.7.0",
+    "sentence-transformers>=2.2.0",
+    "spacy>=3.7.0",
+    "marshmallow>=3.20.0",
+    "python-dotenv>=1.0.0",
+]
 adaptive-crawler = [
     "jaro-winkler>=2.0.3",
     "playwright>=1.27.0",
